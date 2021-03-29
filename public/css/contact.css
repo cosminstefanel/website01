@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #363537;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Text */
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+h4 {
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #7c4e3c;
+}
+a:visited {
+  color: #533428;
+}
+a.btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #a38560;
+  border: 1px solid #cee0ec;
+  padding: 4px 15px;
+  transition: background-color 0.5s;
+}
+a.btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* Header */
+
+header {
+  height: 430px;
+  background: #c4ccd9 url(../images/contact_1200x430.jpeg) no-repeat center
+    bottom;
+  position: relative;
+}
+
+header a.logo {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/logo_165x165.png) no-repeat 0 0;
+  background-size: contain;
+  top: 5.5px;
+  left: 20px;
+}
+header a.logo span {
+  display: none;
+}
+header div.hero {
+  position: absolute;
+  width: 50%;
+  top: 170px;
+  left: 410px;
+}
+header div.hero h1 {
+  line-height: 1em;
+  margin: 0 0 30px 0;
+  color: #c1bfc4;
+}
+h1 {
+  text-align: left;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #6e6bc6;
+  font-family: "Cabin Sketch", cursive;
+}
+h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+h4 {
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+a {
+  color: #007eff;
+}
+a:visited {
+  color: #65b1ff;
+}
+
+a.btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #352708;
+  border: 1px solid #cee0ec;
+  padding: 4px 15px;
+  transition: background-color 0.5s;
+}
+a.btn:hover {
+  background-color: #87d1fd;
+}
+
+/*Section All*/
+
+section {
+  padding: 0 30px;
+}
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* MAIN SECTION */
+
+section.main {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+section.main aside {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+section.main .content {
+  margin: 15px;
+  background: no-repeat center top;
+  background-size: 75px 75px;
+  padding-top: 85px;
+}
+
+section.main aside h3 a {
+  font-family: "Cabin Sketch", cursive;
+  color: #3e2a14;
+  text-decoration: none;
+}
+section.main aside h3 a:hover {
+  text-decoration: underline;
+}
+section.main aside p {
+  font-family: "Cabin Sketch", cursive;
+  color: #1f150a;
+  font-size: 16px;
+  font-weight: 100;
+}
+section.main aside .content.trending {
+  background-image: url(../images/icon_star.svg);
+}
+section.main aside .content.tools {
+  background-image: url(../images/icon_marker.svg);
+}
+section.main aside .content.find-it {
+  background-image: url(../images/icon_gear.svg);
+}
+
+/*Navigation*/
+nav {
+  background-color: rgba(0, 0, 0, 0.001);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 50px 0 0 0;
+  width: 100%;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 1.2em;
+  padding-top: 25px;
+  padding-left: 190px;
+}
+nav::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li:hover {
+  background-color: #a2de91;
+}
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li a {
+  display: inline-bloc;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+nav ul li a:visited {
+  color: #e6f5e0;
+}
+nav ul li a:hover {
+  color: #e6f5e0;
+}
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  background-color: #a2de91;
+  display: none;
+}
+nav ul ul li {
+  position: relative;
+}
+nav ul ul ul {
+  left: 100px;
+  top: 0px;
+} /*Not sure this - ul ul ul - is needed*/
+
+/* Top-level Navigation*/
+nav > ul {
+  padding-left: 200px;
+} /* 200px is the position of the nav from the left close to the logo*/
+nav > ul > li {
+  float: left;
+}
+nav > ul > li > a {
+  width: auto;
+  padding: 10px 20px 15px 20px;
+}
+nav a[aria-haspopup="true"]::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #fff;
+}
+nav > ul > li > a[aria-haspopup="true"]::after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+  left: 20px;
+  right: auto;
+  bottom: 6px;
+  top: auto;
+}
+/* Footer */
+footer {
+  font-size: 0.8em;
+  margin: 40px;
+  margin-left: 0px;
+  color: #999;
+}
+footer .content {
+  display: inline;
+}
+footer a {
+  margin-left: 30px;
+  color: #777;
+}
+footer a:visited {
+  color: #777;
+}
+footer a:hover {
+  color: black;
+}
